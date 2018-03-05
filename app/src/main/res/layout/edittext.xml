@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/inputText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:cursorVisible="false"
+          android:hint="@string/codigo"
+          android:inputType="number"
+          android:lines="1"
+          android:maxLength="5"
+          android:drawableStart="@mipmap/ic_android"
+          android:drawablePadding="10dp"
+          android:drawableTint="@color/blue"
+          android:textColorHint="@color/colorAccent"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/TiLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:errorEnabled="true"
+    app:errorTextAppearance="@string/codigo">
+
+<EditText
+          android:id="@+id/inputText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:cursorVisible="false"
+          android:hint="@string/codigo"
+          android:inputType="number"
+          android:lines="1"
+          android:maxLength="5"
+          android:drawableStart="@mipmap/ic_android"
+          android:drawablePadding="10dp"
+          android:textColorHint="@color/colorAccent"/>
+
+</android.support.design.widget.TextInputLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName|textCapWords"
+            android:lines="1"/>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/lastname"
+            android:inputType="textPersonName|textCapWords"
+            android:lines="1"/>
+
+        <Spinner
+            android:id="@+id/conf_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:dropDownSelector="@android:drawable/ic_dialog_map"
+            android:prompt="@string/hours"/>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true">-->
+
+        <!--<DatePicker-->
+        <!--android:id="@+id/datePicker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:calendarViewShown="false"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/adbaby_edit_bornweight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:hint="@string/weight"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"
+                android:nextFocusDown="@+id/addbaby_edit_bornheight"/>
+
+            <EditText
+                android:id="@+id/addbaby_edit_bornheight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:hint="@string/height"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="3"
+                android:nextFocusDown="@+id/addbaby_edit_weight"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/conf_saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:text="@string/button_send"/>
+
+    </LinearLayout>
+</ScrollView>
+
+

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Vistas</string>
+
+    <string name="hola">Hola Codely!</string>
+    <string name="hola_bold">Hola <b>Codely!</b></string>
+
+    <string name="codigo">Código postal</string>
+    <string name="error_codigo">Código postal incorrecto</string>
+
+    <string name="button_text">Texto</string>
+    <string name="button_image">Imagen</string>
+    <string name="button_buttons">Botones</string>
+    <string name="button_list">Lista</string>
+    <string name="button_listStyled">Lista con estilo</string>
+    <string name="button_grid">Grid</string>
+    <string name="button_gridStyled">Grid con estilo</string>
+    <string name="button_recycler">RecyclerView</string>
+    <string name="button_form">Formulario</string>
+    <string name="button_send">Enviar</string>
+    <string name="button_on">ON</string>
+    <string name="button_off">OFF</string>
+
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="hours">Hora</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="weightheight">Peso y altura</string>
+
+    <string name="choose_option">Elige una opción:</string>
+    <string name="option_A">A</string>
+    <string name="option_B">B</string>
+    <string name="option_C">C</string>
+
+    <string name="profile_babysubtitle_year">%1$s g - %2$s years</string>
+    <plurals name="profile_babysubtitle_days">
+        <item quantity="one">%1$s g - %2$s day</item>
+        <item quantity="other">%1$s g - %2$s days</item>
+    </plurals>
+
+    <string name="codely_link"><a href='http://www.codely.tv'><b>Codely</b></a></string>
+
+    <string name="register_legal">He leído y acepto las <b><a href='http://www.codely.tv'>Condiciones de uso</a></b> y la <b>Política de privacidad.</b></string>
+
+    <string name="opinion_hint">Contact us&#8230;</string>
+    <string name="msgnoresults">We couldn\'t find any results for your search.  If you find there is some relevant information missing please contact us.</string>
+
+    <string name="success_premium">¡Gracias por su compra!\n\nA partir de este momento podrá disfrutar de nuestra aplicación sin publicidad.</string>
+
+    <string-array name="enestosmomentos_array">
+        <item>Now&#8230;</item>
+        <item>I am preganant</item>
+        <item>I am not pregnant</item>
+    </string-array>
+</resources>

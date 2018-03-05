@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/green"
+        android:text="@string/button_send" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/button_send"
+        android:layout_margin="10dp"
+        android:src="@mipmap/giro" />
+
+    <ToggleButton
+        android:id="@+id/toggle_ejemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/button_on"
+        android:textOff="@string/button_off"
+        android:textColor="@color/green"
+        android:layout_margin="10dp"
+        android:checked="false"/>
+
+    <Switch
+        android:id="@+id/switch_ejemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:checked="false" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_ejemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="center"
+        app:fabSize="normal"/>
+</LinearLayout>

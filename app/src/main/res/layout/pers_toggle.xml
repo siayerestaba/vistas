@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toggle_ejemplo"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:background="@drawable/toggle_like"
+              android:checked="false"
+              android:textOff=""
+              android:textOn=""/>
