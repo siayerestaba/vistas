@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Strip {
 
-    public TextView stripUnderlines(TextView textView) {
+    public static TextView stripUnderlines(TextView textView) {
         if (textView == null || textView.getText() == null)
             return textView;
 
@@ -29,7 +29,7 @@ public class Strip {
         return textView;
     }
 
-    private class URLSpanNoUnderline extends URLSpan {
+    private static class URLSpanNoUnderline extends URLSpan {
         public URLSpanNoUnderline(String url) {
             super(url);
         }
