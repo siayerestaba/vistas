@@ -38,6 +38,9 @@
 
         <activity android:name=".RecyclerActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name=".FormActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize" />
     </application>
 
 </manifest>

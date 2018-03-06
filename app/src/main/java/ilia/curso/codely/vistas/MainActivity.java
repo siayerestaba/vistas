@@ -90,5 +90,14 @@ public class MainActivity extends Activity {
                 startActivity(mainIntent);
             }
         });
+
+        Button buttonForm = findViewById(R.id.button_form);
+        buttonForm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(MainActivity.this, FormActivity.class);
+                startActivity(mainIntent);
+            }
+        });
     }
 }

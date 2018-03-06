@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -17,6 +18,7 @@
             android:layout_margin="10dp"
             android:hint="@string/name"
             android:inputType="textPersonName|textCapWords"
+            android:nextFocusDown="@id/lastname"
             android:lines="1"/>
 
         <EditText
@@ -28,28 +30,41 @@
             android:inputType="textPersonName|textCapWords"
             android:lines="1"/>
 
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:hint="@string/codigo"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"
+                android:textColorHint="@color/colorAccent"/>
+
+        </android.support.design.widget.TextInputLayout>
+
         <Spinner
             android:id="@+id/conf_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:dropDownSelector="@android:drawable/ic_dialog_map"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
             android:prompt="@string/hours"/>
 
-
-        <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:clickable="true">-->
-
         <!--<DatePicker-->
-        <!--android:id="@+id/datePicker"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--android:calendarViewShown="false"/>-->
-
-        <!--</RelativeLayout>-->
+            <!--android:id="@+id/datePicker"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:calendarViewShown="false"-->
+            <!--android:datePickerMode="calendar"/>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +73,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/adbaby_edit_bornweight"
+                android:id="@+id/weight"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -67,10 +82,10 @@
                 android:inputType="number"
                 android:lines="1"
                 android:maxLength="5"
-                android:nextFocusDown="@+id/addbaby_edit_bornheight"/>
+                android:nextFocusDown="@+id/height"/>
 
             <EditText
-                android:id="@+id/addbaby_edit_bornheight"
+                android:id="@+id/height"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -78,10 +93,8 @@
                 android:hint="@string/height"
                 android:inputType="number"
                 android:lines="1"
-                android:maxLength="3"
-                android:nextFocusDown="@+id/addbaby_edit_weight"/>
+                android:maxLength="3" />
         </LinearLayout>
-
 
         <Button
             android:id="@+id/conf_saveButton"
