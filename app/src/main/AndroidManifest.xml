@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ilia.curso.codely.vistas">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,38 +11,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ImageActivity"
+        <activity android:name=".activity.ImageActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".TextActivity" />
+        <activity android:name=".activity.TextActivity" />
 
-        <activity android:name=".ButtonsActivity"
+        <activity android:name=".activity.ButtonsActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".ListActivity"
+        <activity android:name=".activity.ListActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".ListWithStyleActivity"
+        <activity android:name=".activity.ListWithStyleActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".GridActivity"
+        <activity android:name=".activity.GridActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".GridWithStyleActivity"
+        <activity android:name=".activity.GridWithStyleActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".RecyclerActivity"
+        <activity android:name=".activity.RecyclerActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <activity android:name=".FormActivity"
+        <activity android:name=".activity.FormActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name=".activity.TabsActivity" />
+        <activity android:name=".activity.TabsWithStyleActivity" />
     </application>
 
 </manifest>

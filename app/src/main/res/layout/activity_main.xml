@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:text="@string/button_text"
         android:textColor="@color/orange"/>
@@ -20,9 +17,10 @@
         android:id="@+id/button_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
         android:text="@string/button_image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_text"
         android:textColor="@color/pink"/>
 
     <Button
@@ -32,13 +30,17 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
         android:text="@string/button_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_image"
         android:textColor="@color/yellow"/>
 
     <LinearLayout
+        android:id="@+id/button_listlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
+        android:layout_below="@id/button_buttons"
         android:orientation="horizontal">
 
         <Button
@@ -58,10 +60,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/button_gridlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
+        android:layout_below="@id/button_listlayout"
+        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <Button
@@ -85,17 +89,77 @@
         android:id="@+id/button_recycler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:text="@string/button_recycler"
+        android:layout_below="@id/button_gridlayout"
         android:textColor="@color/turquesa"/>
 
     <Button
         android:id="@+id/button_form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:text="@string/button_form"
+        android:layout_below="@id/button_recycler"
         android:textColor="@color/blue"/>
-</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_tabslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/button_form"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button_tabs"
+            android:textColor="@color/red"/>
+
+        <Button
+            android:id="@+id/button_tabsStyled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button_tabs"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="@string/button_custom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_tabslayout"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_codely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/hola"
+        android:visibility="gone"
+        android:layout_below="@id/button_custom"
+        android:background="@color/codely_green"
+        android:textColor="@color/black"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_layout"
+        android:visibility="gone"
+        layout="@layout/progressbar" />
+
+</RelativeLayout>

@@ -1,16 +1,12 @@
-package ilia.curso.codely.vistas;
+package ilia.curso.codely.vistas.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import ilia.curso.codely.vistas.R;
 
 public class MainActivity extends Activity {
 
@@ -96,6 +92,24 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent mainIntent = new Intent(MainActivity.this, FormActivity.class);
+                startActivity(mainIntent);
+            }
+        });
+
+        Button buttonTabs = findViewById(R.id.button_tabs);
+        buttonTabs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(MainActivity.this, TabsActivity.class);
+                startActivity(mainIntent);
+            }
+        });
+
+        Button buttonTabsStyled = findViewById(R.id.button_tabsStyled);
+        buttonTabsStyled.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(MainActivity.this, TabsWithStyleActivity.class);
                 startActivity(mainIntent);
             }
         });

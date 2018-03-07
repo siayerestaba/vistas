@@ -17,7 +17,7 @@
         android:layout_margin="@dimen/margin_15dp"
         android:gravity="center"
         android:horizontalSpacing="@dimen/margin_15dp"
-        android:numColumns="4"
+        android:numColumns="3"
         android:scrollbars="none"
         android:stretchMode="columnWidth"
         android:verticalSpacing="@dimen/margin_15dp" />

@@ -1,7 +1,7 @@
 /**
  *
  */
-package ilia.curso.codely.vistas;
+package ilia.curso.codely.vistas.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,9 +13,16 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ilia.curso.codely.vistas.model.Course;
+import ilia.curso.codely.vistas.R;
 
 /**
  * @author ilia
@@ -34,9 +41,9 @@ public class ListWithStyleActivity extends Activity {
 
     private void initListView() {
         ListView listview = findViewById(R.id.menu_listview);
-        String[] values = getResources().getStringArray(R.array.guide_hour);
 
-        adapter = new MenuAdapter(this, values);
+        List<Course> courses = initObjectList();
+        adapter = new MenuAdapter(this, courses);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(menuListener);
     }
@@ -44,46 +51,64 @@ public class ListWithStyleActivity extends Activity {
     private OnItemClickListener menuListener = new OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            String item = adapter.getItem(position);
-            showSelected(item);
+            showSelected(adapter.getItem(position));
 
         }
     };
 
-    public void showSelected(String item) {
-        Toast.makeText(this, item, Toast.LENGTH_SHORT).show();
+    private List<Course> initObjectList() {
+        List<Course> listViewItems = new ArrayList<>();
+        String[] titles = getResources().getStringArray(R.array.courses_titles);
+        String[] authors = getResources().getStringArray(R.array.courses_authors);
+
+        for (int i = 0; i < titles.length; i++) {
+            int id = getResources().getIdentifier("codely_" + i, "mipmap", getPackageName());
+            listViewItems.add(new Course(titles[i], id, authors[i]));
+        }
+
+        return listViewItems;
+    }
+
+    public void showSelected(Course course) {
+        Toast.makeText(this, course.getTitle(), Toast.LENGTH_SHORT).show();
     }
 
     private class MenuAdapter extends BaseAdapter {
         private Context context;
-        private String[] menuItems;
+        private List<Course> menuItems;
 
-        public MenuAdapter(Context context, String[] items) {
+        public MenuAdapter(Context context, List<Course> items) {
             this.context = context;
             menuItems = items;
         }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            String entry = menuItems[position];
+            Course course = menuItems.get(position);
 
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.menu_item, null);
+            convertView = inflater.inflate(R.layout.list_item, null);
 
-            TextView section = convertView.findViewById(R.id.section);
-            section.setText(entry);
+            TextView title = convertView.findViewById(R.id.item_title);
+            title.setText(course.getTitle());
+
+            TextView author = convertView.findViewById(R.id.item_author);
+            author.setText(course.getAuthor());
+
+            ImageView image = convertView.findViewById(R.id.item_image);
+            image.setImageResource(course.getImage());
 
             return convertView;
         }
 
         @Override
         public int getCount() {
-            return menuItems.length;
+            return menuItems.size();
         }
 
         @Override
-        public String getItem(int position) {
-            return menuItems[position];
+        public Course getItem(int position) {
+            return menuItems.get(position);
         }
 
         @Override

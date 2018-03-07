@@ -1,4 +1,4 @@
-package ilia.curso.codely.vistas;
+package ilia.curso.codely.vistas.commons;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,6 +8,8 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import ilia.curso.codely.vistas.R;
 
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 

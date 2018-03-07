@@ -8,4 +8,36 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="title">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/codely_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/margin_10dp</item>
+    </style>
+
+    <style name="title.subtitle">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_list">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_list.test">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin_10dp</item>
+    </style>
+
+    <style name="text_list.subtitle">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">@dimen/margin_10dp</item>
+        <item name="android:paddingLeft">@dimen/margin_10dp</item>
+        <item name="android:paddingRight">@dimen/margin_10dp</item>
+    </style>
+
 </resources>

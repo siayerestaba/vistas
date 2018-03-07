@@ -13,6 +13,7 @@
     <color name="pink">#FF4081</color>
     <color name="blue">#4fc3f7</color>
     <color name="green">#82bc00</color>
+    <color name="codely_green">#67e083</color>
     <color name="yellow_light">#fffe91</color>
     <color name="yellow">#ffeb3b</color>
     <color name="red">#CF0000</color>
@@ -20,4 +21,7 @@
     <color name="orange_dark">#C05810</color>
     <color name="purple">#673ab7</color>
     <color name="turquesa">#009688</color>
+
+    <color name="grey_hint">#A7A7A7</color>
+    <color name="grey">#555555</color>
 </resources>

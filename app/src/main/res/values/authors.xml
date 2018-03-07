@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="courses_authors">
+        <item>Jose Armesto</item>
+        <item>Javier Ferrer, Rafa Gómez</item>
+        <item>Alberto Gualis, Javier Rubio</item>
+        <item>Jorge Barroso, Sergio Gutiérrez</item>
+        <item>Javier Ferrer, Rafa Gómez</item>
+        <item>Jorge Barroso, Sergio Gutiérrez</item>
+        <item>Jorge Barroso, Sergio Gutiérrez</item>
+        <item>Ramon Aranda, Jordi Llonch</item>
+        <item>Javier Ferrer, Rafa Gómez</item>
+        <item>Jorge Barroso, Sergio Gutiérrez</item>
+        <item>Javier Ferrer, Rafa Gómez</item>
+        <item>José E. Rodriguez</item>
+        <item>Jose Armesto</item>
+        <item>Alberto Gualis, Javier Rubio</item>
+        <item>JuanMa Garrido</item>
+    </string-array>
+</resources>

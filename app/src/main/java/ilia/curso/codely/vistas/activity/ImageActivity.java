@@ -1,4 +1,4 @@
-package ilia.curso.codely.vistas;
+package ilia.curso.codely.vistas.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
+
+import ilia.curso.codely.vistas.R;
 
 public class ImageActivity extends Activity {
 

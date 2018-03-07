@@ -16,6 +16,8 @@
     <string name="button_gridStyled">Grid con estilo</string>
     <string name="button_recycler">RecyclerView</string>
     <string name="button_form">Formulario</string>
+    <string name="button_tabs">Pestañas</string>
+    <string name="button_custom">Personalización</string>
     <string name="button_send">Enviar</string>
     <string name="button_on">ON</string>
     <string name="button_off">OFF</string>
@@ -24,6 +26,7 @@
     <string name="lastname">Apellido</string>
     <string name="hours">Hora</string>
     <string name="height">Altura</string>
+    <string name="date">Fecha</string>
     <string name="weight">Peso</string>
     <string name="weightheight">Peso y altura</string>
 

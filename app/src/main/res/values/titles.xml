@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="courses_titles">
+        <item>AWS: Tu primer deploy en EC2</item>
+        <item>CQRS: Command Query Responsibility</item>
+        <item>Testing unidirectional dataflow con Vuex y Jest</item>
+        <item>UI Testing en iOS con KIF</item>
+        <item>API HTTP con Scala y Akka</item>
+        <item>Screenshot Testing en Android</item>
+        <item>Screenshot Testing en iOS</item>
+        <item>CQRS y Event Sourcing con Kotlin y Axon</item>
+        <item>Introducción a Scala</item>
+        <item>UI Testing en Android con Espresso</item>
+        <item>Arquitectura Hexagonal</item>
+        <item>Agile: Retrospectiva</item>
+        <item>AWS: Autoescalado de aplicaciones con ALB y ASG</item>
+        <item>Crea una app con VueJS y Jest aplicando TDD</item>
+        <item>Crea una app MEAN profesional con AngularJS y Webpack</item>
+    </string-array>
+</resources>

@@ -58,13 +58,16 @@
             android:dropDownSelector="@android:drawable/arrow_down_float"
             android:prompt="@string/hours"/>
 
-        <!--<DatePicker-->
-            <!--android:id="@+id/datePicker"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:calendarViewShown="false"-->
-            <!--android:datePickerMode="calendar"/>-->
+        <EditText
+            android:id="@+id/etPlannedDate"
+            android:hint="@string/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:maxLines="1" />
 
         <LinearLayout
             android:layout_width="match_parent"

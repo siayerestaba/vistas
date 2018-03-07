@@ -1,4 +1,4 @@
-package ilia.curso.codely.vistas;
+package ilia.curso.codely.vistas.commons;
 
 import android.text.Spannable;
 import android.text.TextPaint;

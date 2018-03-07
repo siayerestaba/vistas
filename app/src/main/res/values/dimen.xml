@@ -26,4 +26,28 @@
     <dimen name="margin_115dp">115dp</dimen>
     <dimen name="margin_200dp">200dp</dimen>
     <dimen name="margin_150dp">150dp</dimen>
+
+    <dimen name="badge_text_size">5sp</dimen>
+    <dimen name="text_8sp">8sp</dimen>
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_13sp">13sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_17sp">17sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+    <dimen name="text_26sp">26sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_36sp">36sp</dimen>
+    <dimen name="text_38sp">38sp</dimen>
+    <dimen name="text_40sp">40sp</dimen>
+    <dimen name="text_42sp">42sp</dimen>
+    <dimen name="text_44sp">44sp</dimen>
+    <dimen name="text_46sp">46sp</dimen>
+    <dimen name="text_50sp">50sp</dimen>
+    <dimen name="text_56sp">56sp</dimen>
 </resources>

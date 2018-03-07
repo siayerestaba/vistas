@@ -20,4 +20,17 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/hola_bold"/>
 
+    <ilia.curso.codely.vistas.custom.ExtendedEditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:hint="@string/codigo"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="5"
+        android:drawableStart="@mipmap/ic_android"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/colorAccent"/>
+
 </LinearLayout>
