@@ -3,6 +3,7 @@ package ilia.curso.codely.vistas.activity;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -37,9 +38,8 @@ public class RecyclerActivity extends Activity {
         courses = initObjectList();
 
         mRecyclerView = findViewById(R.id.recyclerlist);
-//        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.HORIZONTAL));
         mRecyclerView.setHasFixedSize(true);
 
         CourseAdapter adapter = new CourseAdapter(this, courses);

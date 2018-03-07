@@ -11,10 +11,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/codely" />
 
-    <ListView
-        android:id="@+id/menu_listview"
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@color/turquesa"
-        android:dividerHeight="@dimen/margin_10dp"/>
+        android:layout_height="wrap_content"/>
 </LinearLayout>

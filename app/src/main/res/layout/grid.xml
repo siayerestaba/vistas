@@ -16,8 +16,8 @@
         android:layout_height="fill_parent"
         android:layout_margin="@dimen/margin_15dp"
         android:gravity="center"
-        android:horizontalSpacing="@dimen/margin_15dp"
-        android:numColumns="3"
+        android:horizontalSpacing="@dimen/margin_10dp"
+        android:numColumns="2"
         android:scrollbars="none"
         android:stretchMode="columnWidth"
         android:verticalSpacing="@dimen/margin_15dp" />

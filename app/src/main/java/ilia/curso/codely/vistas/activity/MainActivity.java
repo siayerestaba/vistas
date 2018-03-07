@@ -15,6 +15,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button buttonCodely = findViewById(R.id.button_codely);
+        buttonCodely.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(MainActivity.this, CodelyFormActivity.class);
+                startActivity(mainIntent);
+            }
+        });
+
         Button buttonText = findViewById(R.id.button_text);
         buttonText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +109,7 @@ public class MainActivity extends Activity {
         buttonTabs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(MainActivity.this, TabsActivity.class);
+                Intent mainIntent = new Intent(MainActivity.this, SlidesActivity.class);
                 startActivity(mainIntent);
             }
         });
@@ -109,7 +118,16 @@ public class MainActivity extends Activity {
         buttonTabsStyled.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(MainActivity.this, TabsWithStyleActivity.class);
+                Intent mainIntent = new Intent(MainActivity.this, TabsActivity.class);
+                startActivity(mainIntent);
+            }
+        });
+
+        Button buttonFrg = findViewById(R.id.button_frg);
+        buttonFrg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(MainActivity.this, ListadoActivity.class);
                 startActivity(mainIntent);
             }
         });

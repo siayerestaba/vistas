@@ -3,9 +3,15 @@
 
     <string name="hola">Hola Codely!</string>
     <string name="hola_bold">Hola <b>Codely!</b></string>
+    <string name="codely">Codely PRO</string>
+    <string name="codely_opinion">Codely PRO - Opinión</string>
 
     <string name="codigo">Código postal</string>
-    <string name="error_codigo">Código postal incorrecto</string>
+    <string name="email">Email</string>
+    <string name="error_empty">El email es obligatorio</string>
+    <string name="error_email">Email incorrecto</string>
+
+    <string name="opinion">Escribe tu opinión</string>
 
     <string name="button_text">Texto</string>
     <string name="button_image">Imagen</string>
@@ -16,9 +22,12 @@
     <string name="button_gridStyled">Grid con estilo</string>
     <string name="button_recycler">RecyclerView</string>
     <string name="button_form">Formulario</string>
+    <string name="button_slides">Slides</string>
     <string name="button_tabs">Pestañas</string>
+    <string name="button_frg">Fragment</string>
     <string name="button_custom">Personalización</string>
     <string name="button_send">Enviar</string>
+    <string name="button_hide">Ocultar / Mostrar</string>
     <string name="button_on">ON</string>
     <string name="button_off">OFF</string>
 

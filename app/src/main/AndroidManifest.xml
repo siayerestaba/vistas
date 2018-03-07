@@ -44,8 +44,10 @@
         <activity android:name=".activity.FormActivity"
                   android:configChanges="orientation|keyboardHidden|screenSize" />
 
+        <activity android:name=".activity.SlidesActivity" />
         <activity android:name=".activity.TabsActivity" />
-        <activity android:name=".activity.TabsWithStyleActivity" />
+        <activity android:name=".activity.ListadoActivity" />
+        <activity android:name=".activity.CodelyFormActivity" />
     </application>
 
 </manifest>

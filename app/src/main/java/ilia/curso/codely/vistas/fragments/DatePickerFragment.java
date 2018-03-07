@@ -32,7 +32,7 @@ public class DatePickerFragment extends DialogFragment {
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog dialog =  new DatePickerDialog(getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_DARK, listener, year, month, day);
+        DatePickerDialog dialog =  new DatePickerDialog(getActivity(), AlertDialog.THEME_HOLO_DARK, listener, year, month, day);
         dialog.setTitle(R.string.date);
         // Create a new instance of DatePickerDialog and return it
         return dialog;
