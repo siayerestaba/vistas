@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/codelydegradado"
+    android:background="@color/codely_green"
     android:orientation="vertical">
 
     <ScrollView
@@ -17,6 +17,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/title"
                 style="@style/title.azul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.view.View;
@@ -14,10 +15,13 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import ilia.curso.codely.vistas.R;
 import ilia.curso.codely.vistas.commons.Validator;
+import ilia.curso.codely.vistas.custom.FontLoader;
 import ilia.curso.codely.vistas.custom.ImageService;
+import ilia.curso.codely.vistas.custom.SGTypeFace;
 import ilia.curso.codely.vistas.fragments.DatePickerFragment;
 
 public class CodelyFormActivity extends Activity {
@@ -29,6 +33,9 @@ public class CodelyFormActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_style);
+
+        Typeface typeface = SGTypeFace.initializeAppTypeface(this, "bite_chocolate.ttf");
+        FontLoader.setDefaultFont(typeface);
 
         imagen = findViewById(R.id.image_course);
 
@@ -43,7 +50,6 @@ public class CodelyFormActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 int id = getResources().getIdentifier("codely_" + i, "mipmap", getPackageName());
-//                imagen.setImageResource(id);
 
                 Bitmap bitmap = ImageService.getCircleBitmap(BitmapFactory.decodeResource(getResources(), id));
                 imagen.setImageBitmap(bitmap);
@@ -56,6 +62,8 @@ public class CodelyFormActivity extends Activity {
             }
         });
 
+        TextView title = findViewById(R.id.title);
+        FontLoader.applyDefault(title);
 
     }
 }

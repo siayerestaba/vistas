@@ -1,4 +1,4 @@
-package com.inouttv.sincroguia.custom;
+package ilia.curso.codely.vistas.custom;
 
 import android.content.Context;
 import android.graphics.Typeface;
