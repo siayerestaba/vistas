@@ -38,8 +38,6 @@ public class RecyclerFragment extends Fragment {
 
         mRecyclerView = rootView.findViewById(R.id.recyclerlist);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-//		mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-//		mRecyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         mRecyclerView.setHasFixedSize(true);
 
         CourseAdapter adapter = new CourseAdapter(getActivity(), courses);

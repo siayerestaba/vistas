@@ -11,11 +11,13 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import ilia.curso.codely.vistas.commons.Validator;
 import ilia.curso.codely.vistas.fragments.DatePickerFragment;
 import ilia.curso.codely.vistas.R;
 
 public class FormActivity extends Activity {
 
+    private EditText email;
     private EditText fecha;
     private TextInputLayout textLayout;
 
@@ -33,7 +35,7 @@ public class FormActivity extends Activity {
         Spinner horas = findViewById(R.id.conf_spinner);
         horas.setAdapter(adaptador);
 
-        EditText codigo = findViewById(R.id.inputText);
+        email = findViewById(R.id.inputText);
         textLayout = findViewById(R.id.TiLayout);
 
         fecha = findViewById(R.id.etPlannedDate);
@@ -48,7 +50,23 @@ public class FormActivity extends Activity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textLayout.setError(getString(R.string.error_codigo));
+                if(email.getText() == null || email.getText().toString().equals("")) {
+                    textLayout.setError(getString(R.string.error_empty));
+                } else if (!Validator.isEmailValid(email.getText().toString())) {
+                    textLayout.setError(getString(R.string.error_email));
+                }
+            }
+        });
+
+        Button showhide = findViewById(R.id.hideButton);
+        showhide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(fecha.getVisibility() == View.VISIBLE) {
+                    fecha.setVisibility(View.GONE);
+                } else {
+                    fecha.setVisibility(View.VISIBLE);
+                }
             }
         });
     }
